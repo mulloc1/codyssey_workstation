@@ -56,34 +56,34 @@
 ### 4.3 Docker 기본 운영 및 컨테이너 실습
 
 - 검증 기준: Docker 엔진 동작, 이미지/컨테이너 조회, 로그/리소스 확인, `hello-world` 성공, `ubuntu` 내부 명령 수행, `attach/exec` 차이 관찰
-- 상세 기록 참조: `docs/logs/docker-basic.md`, `docs/logs/container-practice.md`
+- 상세 기록 참조: `docs/logs/docker-core.md`
 
-### 4.5 Dockerfile 기반 커스텀 이미지
+### 4.4 Dockerfile 기반 커스텀 이미지
 
 - 검증 기준: 커스텀 이미지 빌드 성공, 컨테이너 실행 성공, 커스텀 포인트 목적 설명 가능
 - 상세 기록 참조: `docs/logs/custom-image.md`
 
-### 4.6 포트 매핑 접속
+### 4.5 포트 매핑 접속
 
 - 검증 기준: 호스트 포트를 통한 서비스 접근 성공(브라우저 또는 curl)
 - 상세 기록 참조: `docs/logs/port-mapping.md`
 
-### 4.7 스토리지 실습 (바인드 마운트/볼륨 영속성)
+### 4.6 스토리지 실습 (바인드 마운트/볼륨 영속성)
 
 - 검증 기준: 바인드 마운트에서 호스트 파일 변경의 컨테이너 반영 여부(전/후 비교), 볼륨에서 컨테이너 삭제 후 재생성에도 데이터 유지됨을 확인
-- 상세 기록 참조: `docs/logs/bind-mount.md`, `docs/logs/volume-persistence.md`
+- 상세 기록 참조: `docs/logs/docker-storage.md`
 
-### 4.8 Git/GitHub 연동
+### 4.7 Git/GitHub 연동
 
 - 검증 기준: Git 사용자 설정/기본 브랜치 반영, GitHub/VSCode 연동 증거 확인
 - 상세 기록 참조: `docs/logs/git-github-integration.md`
 
-### 4.9 실행 환경 정보
+### 4.8 실행 환경 정보
 
 - 검증 기준: OS/Shell/Terminal/Docker/Git 버전이 평가 환경 기준으로 기록됨
 - 상세 기록 참조: `docs/logs/environment.md`
 
-### 4.10 트러블슈팅
+### 4.9 트러블슈팅
 
 - 검증 기준: 이슈 원인/조치/재발 방지 관점으로 최소 2건 정리
 - 상세 기록 참조: `docs/logs/troubleshooting.md`
