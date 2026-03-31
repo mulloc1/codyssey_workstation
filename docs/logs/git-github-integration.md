@@ -11,10 +11,19 @@ git config --global user.email
 git config --global init.defaultBranch
 ```
 
+명령어 설명:
+
+- `git --version`: 현재 설치된 Git 버전 확인
+- `git config --global user.name`: 전역 사용자 이름 설정값 조회 (커밋 작성자 이름)
+- `git config --global user.email`: 전역 사용자 이메일 설정값 조회 (커밋 작성자 이메일)
+- `git config --global init.defaultBranch`: `git init` 시 생성되는 기본 브랜치 이름 조회
+
 출력:
 
 ```text
-# 여기에 실제 출력 기록
+❯ git --version
+git version 2.39.5 (Apple Git-154)
+
 ```
 
 ## 2) 로컬 저장소 상태 확인
@@ -25,10 +34,24 @@ git branch --show-current
 git status -sb
 ```
 
+명령어 설명:
+
+- `git rev-parse --is-inside-work-tree`: 현재 디렉터리가 Git 작업 트리 내부인지 확인
+- `git branch --show-current`: 현재 체크아웃된 브랜치 이름 출력
+- `git status -sb`: 상태를 짧은 형식으로 출력 (`-s`), 브랜치 정보 포함 (`-b`)
+
 출력:
 
 ```text
-# 여기에 실제 출력 기록
+❯ git rev-parse --is-inside-work-tree
+true
+
+❯ git branch --show-current
+main
+
+❯ git status -sb
+## main
+ M docs/logs/git-github-integration.md
 ```
 
 ## 3) GitHub 연동 확인
@@ -39,10 +62,16 @@ git remote -v
 gh auth status
 ```
 
+명령어 설명:
+
+- `git remote -v`: 원격 저장소 이름과 URL(가져오기/푸시) 확인
+
 출력:
 
 ```text
-# 여기에 실제 출력 기록
+❯ git remote -v
+origin  git@github.com:mulloc1/codyssey_workstation.git (fetch)
+origin  git@github.com:mulloc1/codyssey_workstation.git (push)
 ```
 
 ## 4) 체크리스트
@@ -50,4 +79,3 @@ gh auth status
 - [ ] Git 사용자 설정 확인 완료 (`user.name`, `user.email`)
 - [ ] 기본 브랜치 정책 확인 완료 (`init.defaultBranch`)
 - [ ] 원격 저장소(GitHub) 연결 확인 완료 (`git remote -v`)
-- [ ] 필요 시 GitHub 인증 상태 확인 완료 (`gh auth status`)
